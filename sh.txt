@@ -1,0 +1,5 @@
+cd yolov5
+
+python train.py --data mydata.yaml --batch-size 16 
+
+python detect.py --source ../datasets/mydata/images/val --weights ./runs/train/exp26/weights/best.pt
